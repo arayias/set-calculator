@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="app.js" defer></script>
+    <script src="set.js" defer></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Set Calculator</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header><strong>Set Calculator</strong></header>
+
+      <main>
+        <div class="variables">
+          <div class="variable-A">
+            <span>A: &lbrace;</span>
+            <input type="text" />
+            <span>&rbrace;</span>
+          </div>
+          <button class="add-variables">+</button>
+          <div class="universal-set">
+            <span><strong>U</strong>: &lbrace;</span>
+            <input type="text" />
+            <span>&rbrace;</span>
+          </div>
+        </div>
+
+        <div class="equation">
+          <span><strong>Equation</strong></span>
+          <input type="text" />
+        </div>
+        <div class="result"></div>
+        <div class="usage">
+          <span><strong>Usage</strong></span>
+          <div class="usage-content">
+            <p>
+              <strong>U</strong> is the universal set. It is the set of all
+              possible elements.
+            </p>
+            <p>
+              <strong>A</strong> is a set. It is a subset of the universal set.
+            </p>
+            <p>
+              <strong>Equation</strong> is the equation to be evaluated. It can
+              contain the following operators:
+            </p>
+            <ul>
+              <li><strong>V</strong> union</li>
+              <li><strong>^</strong> intersection</li>
+              <li>
+                <strong>'</strong> complement (can only be used if U is present)
+              </li>
+            </ul>
+            <p>
+              <strong>Example</strong>: <code>(A V B) ^ C' </code> (case
+              sensitive)
+            </p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
